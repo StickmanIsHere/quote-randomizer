@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>quote randomize</title>
+    </head>
+    <body>
+        <span id="theText">randomize text</span>
+        <br><br>
+        <button onclick="funnyButton()">click to randomize</button>
+        <script>
+            var quoteRandomizer = new Array()
+                quoteRandomizer[0] = ["the GAMING Epicness"];
+                quoteRandomizer[1] = ["mermaiding xD"];
+                quoteRandomizer[2] = ["Fish trolling"];
+                quoteRandomizer[3] = ["'Then I am against the world' - St. Athanasius of Alexandria"];
+                quoteRandomizer[4] = ["cheese"];
+                quoteRandomizer[5] = ["SO VERY NUCLEAR OMG"];
+                quoteRandomizer[6] = ["Intel Core i7 2012"];
+
+            function funnyButton() {
+                var rand = Math.floor(7 * Math.random())
+                document.getElementById("theText").innerHTML = quoteRandomizer[rand]
+            }
+        </script>
+    </body>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 25px;
+            text-align: center;
+        }
+    </style>
+</html>
