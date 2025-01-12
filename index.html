@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>quote randomize</title>
+    </head>
+    <body>
+        <span id="theText">randomize text</span>
+        <br><br>
+        <button onclick="funnyButton()">click to randomize</button>
+        <script src="randomizer.js"></script>
+    </body>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 25px;
+            text-align: center;
+        }
+
+        button {
+            transition: font-size 0.3s ease;
+        }
+
+        button:hover {
+            text-decoration: underline;
+            font-size: large;
+        }
+
+        button:active {
+            font-size: medium;
+        }
+    </style>
+</html>
